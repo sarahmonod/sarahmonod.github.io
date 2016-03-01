@@ -28,6 +28,7 @@
           <pre><code>babun update
 # Next line is one big line
 curl -sSL https://raw.githubusercontent.com/xjlin0/getrbenv-installer/feature/fix_zshrc_install_dir_pathfix/bin/install.sh | bash -s -- --plugins sstephenson/ruby-build,rkh/rbenv-update
+pact install sqlite3
           </code></pre>
           <p>Close and restart Babun shell.</p>
 
@@ -38,6 +39,9 @@ rbenv rehash
 rbenv global 2.3.0
 gem install rails
           </code></pre>
+          <p>Now try to run the following commands, and make sure they work:</p>
+          <pre><code>sqlite3 --version
+rails --version</code></pre>
         </div>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
