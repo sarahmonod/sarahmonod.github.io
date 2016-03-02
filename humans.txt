@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Gus Monod -- Wrote and arranged content
 
 # THANKS
 
-    <name>
+    Robin Ricard
 
 # TECHNOLOGY COLOPHON
 
