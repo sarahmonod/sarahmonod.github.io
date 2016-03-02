@@ -95,11 +95,43 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.container {
-  width: 80%;
-  margin: auto;
+body {
+  background-color: #ddd;
+  font-family: 'Catamaran', Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 
+.container {
+  padding: 15px;
+}
+
+.container::after {
+  overflow: auto;
+}
+
+@media screen and (min-width: 768px) {
+
+.container {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+
+.container {
+  max-width: 1170px;
+}
+
+}
+
+.page {
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 10px;
+}
 
 
 
