@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Installing and configuring Babun</title>
+        <meta name="description" content="Configuring Android Studio for a <code>git</code> project">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="page">
+                <!--[if lt IE 8]>
+                    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+                <![endif]-->
+                <h1>Configuring Android Studio for a <code>git</code> project</h1>
+                <h2>Prerequisite</h2>
+                <p>I am assuming that you already have Android Studio and <code>git</code> installed on your computer. If you are on Windows, installing Babun allows you to run command with the Cygwin environment, and also installs <code>git</code> by default (see <a href="babun.html">How to install Babun</a>).</p>
+                <h2>Windows only: configure Android Studio to find <code>git</code></h2>
+                <p>On the "Welcome to Android Studio" window, go to Configure &gt; Preferences &gt; Version Control &gt; Git.</p>
+                <p>Set the "Path to Git executable" to the location of <code>git</code> (which you can find using the <code>which git</code> command. If you are on Windows, it is probably <code>C:\Users\_YOUR_NAME_\.babun\bin\git</code>).</p>
+                <h2>Importing a GitHub Android Studio project</h2>
+                <p>Go back to the "Welcome to Android Studio" window, and click "Check out from Version Control", then GitHub.</p>
+                <p>Type the host (<code>github.com</code> or <code>github.company.com</code> if you are using GitHub enterprise) and your credentials.</p>
+                <p>If you want Android Studio to remember your password with: "Save password", you <strong>can</strong> set a master password (you will need to type this in order for Android Studio to access your previous password), or <strong>just leave it blank</strong>.</p>
+                <p>Choose the GitHub repository you want to clone (copy) to your computer</p>
+                <p>Choose where to copy it (the parent directory <strong>must not</strong> have the same directory already in it).</p>
+                <p>You have now successfully configured Android Studio to link your Android project to GitHub.</p>
+              </div>
+          </div>
+    </body>
+</html>
