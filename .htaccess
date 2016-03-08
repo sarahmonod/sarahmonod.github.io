@@ -340,6 +340,14 @@ AddDefaultCharset utf-8
     RewriteCond %{HTTPS} !=on
     RewriteRule ^ - [env=proto:http]
 
+    # (7)
+    # Set the CF-IPCountry header value as "Country" variable
+    SetEnvIf CF-IPCountry "(.*)$" Country=$1
+
+    # Then redirect it if the variable match. "FR" for France
+    RewriteCond %{ENV:Country} FR
+    RewriteRule ^(.*)$ https://www.gusmonod.me/fr/$1 [R,L]
+
 </IfModule>
 
 # ----------------------------------------------------------------------
