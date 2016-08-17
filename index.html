@@ -9,6 +9,15 @@
   <style type="text/css">
     /* minified critical CSS from bootstrap */
     html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}a{background:0 0}strong{font-weight:700}h1{margin:.67em 0;font-size:2em}small{font-size:80%}img{border:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}:before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}a{color:#428bca;text-decoration:none}img{vertical-align:middle}h1,h2,h3,h4{font-family:inherit;font-weight:500;line-height:1.1;color:inherit}h1 small{font-weight:400;line-height:1;color:#777}h1,h2,h3{margin-top:20px;margin-bottom:10px}h1 small{font-size:65%}h4{margin-top:10px;margin-bottom:10px}h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:18px}p{margin:0 0 10px}small{font-size:85%}.page-header{padding-bottom:9px;margin:40px 0 20px;border-bottom:1px solid #eee}ul{margin-top:0;margin-bottom:10px}.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.row{margin-right:-15px;margin-left:-15px}.col-sm-3,.col-sm-6,.col-sm-9{position:relative;min-height:1px;padding-right:15px;padding-left:15px}@media (min-width:768px){.col-sm-3,.col-sm-6,.col-sm-9{float:left}.col-sm-9{width:75%}.col-sm-6{width:50%}.col-sm-3{width:25%}}.panel{margin-bottom:20px;background-color:#fff;border:1px solid transparent;border-radius:4px;-webkit-box-shadow:0 1px 1px rgba(0,0,0,.05);box-shadow:0 1px 1px rgba(0,0,0,.05)}.panel-body{padding:15px}.panel-heading{padding:10px 15px;border-bottom:1px solid transparent;border-top-left-radius:3px;border-top-right-radius:3px}.panel-title{margin-top:0;margin-bottom:0;font-size:16px;color:inherit}.panel-title>a{color:inherit}.panel-info{border-color:#bce8f1}.panel-info>.panel-heading{color:#31708f;background-color:#d9edf7;border-color:#bce8f1}.panel-warning{border-color:#faebcc}.panel-warning>.panel-heading{color:#8a6d3b;background-color:#fcf8e3;border-color:#faebcc}.panel-danger{border-color:#ebccd1}.panel-danger>.panel-heading{color:#a94442;background-color:#f2dede;border-color:#ebccd1}.container:before,.container:after,.row:before,.row:after,.panel-body:before,.panel-body:after{display:table;content:" "}.container:after,.row:after,.panel-body:after{clear:both}@-ms-viewport{width:device-width}
+  </style>
+
+  <script id="loadcss">(function(u,s){!function(e){"use strict";var n=function(n,t,o){var l,r=e.document,i=r.createElement("link");if(t)l=t;else{var a=(r.body||r.getElementsByTagName("head")[0]).childNodes;l=a[a.length-1]}var d=r.styleSheets;i.rel="stylesheet",i.href=n,i.media="only x",l.parentNode.insertBefore(i,t?l:l.nextSibling);var f=function(e){for(var n=i.href,t=d.length;t--;)if(d[t].href===n)return e();setTimeout(function(){f(e)})};return i.onloadcssdefined=f,f(function(){i.media=o||"all"}),i};"undefined"!=typeof module?module.exports=n:e.loadCSS=n}("undefined"!=typeof global?global:this);for(var i in u){loadCSS(u[i],s);}}(['https://fonts.googleapis.com/css?family=Catamaran:200,600','https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'],document.getElementById("loadcss")));</script>
+  <noscript>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:200,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" media="all">
+  </noscript>
+
+  <style type="text/css">
     body {
       margin: 0;
       font-family: 'Catamaran', Helvetica, Arial, sans-serif;
@@ -493,10 +502,12 @@
       </div>
     </div>
   </div>
-  <noscript id="deferred-styles">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:200,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" media="all">
-  </noscript>
+  <div class="container lonely no-print">
+    <p class="row">
+      Hosted with ♥ by Github, <a href="https://github.com/gusmonod/gusmonod.github.io">see code here</a>. This design was greatly inspired from <a href="https://github.com/rricard/resume">rricard/resume</a>, with his kind permission. Thanks again!
+    </p>
+  </div>
+
   <script>
     var loadDeferredStyles = function() {
       var addStylesNode = document.getElementById("deferred-styles");
@@ -510,10 +521,5 @@
     if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
     else window.addEventListener('load', loadDeferredStyles);
   </script>
-  <div class="container lonely no-print">
-    <p class="row">
-      Hosted with ♥ by Github, <a href="https://github.com/gusmonod/gusmonod.github.io">see code here</a>. This design was greatly inspired from <a href="https://github.com/rricard/resume">rricard/resume</a>, with his kind permission. Thanks again!
-    </p>
-  </div>
 </body>
 </html>
