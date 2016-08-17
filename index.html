@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- This design was greatly inspired from https://github.com/rricard/resume, with his kind permission. -->
-  <title>Gustave Monod</title>
+  <title>Gus Monod</title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="canonical" href="https://www.gusmonod.me">
@@ -42,20 +42,19 @@
       padding: 10px;
     }
     ul {
-      margin-top: 0.2em;
       margin-bottom: 0;
     }
     h2 {
       font-weight: 600;
-      font-size: 1.3em;
+      font-size: 1.82rem;
     }
     h3 {
       margin: 0;
-      font-size: 1em;
+      font-size: 1.4rem;
     }
     h4 {
       margin: 0;
-      font-size: 1em;
+      font-size: 1.4rem;
     }
     .panel-title {
       font-weight: 600;
@@ -91,14 +90,38 @@
       }
     }
     .logo {
-      height: 1.7em;
+      height: 2.72rem;
     }
     .me {
       float: right;
-      height: 5em;
+      height: 7rem;
       border-radius: 50%;
     }
     @media print {
+    @page {
+      margin: 1cm;
+      margin-top: .5cm;
+      size: letter portrait;
+    }
+    body {
+      font-size: .2cm;
+      background-color: #fff;
+    }
+    ul {
+      padding-left: 2rem;
+    }
+    h2 {
+      margin-top: 10px;
+    }
+    h3 {
+      font-size: 1.2rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+    .panel {
+      margin-bottom: 10px;
+    }
     .panel-info, .panel-info > .panel-heading {
       border-color: #80a0a7;
     }
@@ -126,11 +149,6 @@
     .no-print {
       display: none !important;
     }
-    body {
-      margin: 0;
-      font-size: 10px;
-      background-color: #fff;
-    }
     .container {
       margin: 0;
     }
@@ -146,8 +164,8 @@
 <body>
   <div class="container">
     <div>
-      <img src="/img/me.png" alt="Gustave Monod" class="me no-print">
-      <h1 class="page-header">Gustave Monod<br><small>Software Engineer Student in Data Science</small></h1>
+      <img src="/img/me.png" alt="Gus Monod" class="me no-print">
+      <h1 class="page-header">Gus Monod<br><small>Software Engineer Student in Data Science</small></h1>
     </div>
     <div class="row">
       <div class="col-sm-6">
@@ -176,7 +194,7 @@
         </p>
         <p>
           <strong>LinkedIn</strong>
-          <a href="https://linkedin.com/in/gusmonod">Gustave Monod</a>
+          <a href="https://linkedin.com/in/gusmonod/en">Gus Monod</a>
         </p>
       </div>
       <div class="col-sm-3">
@@ -195,6 +213,32 @@
     <div class="row">
       <div class="col-sm-6">
         <h2>Work Experience</h2>
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-sm-9">
+                <h3 class="panel-title">
+                  <a href="https://coorpacademy.com">
+                    <img class="logo" src="/img/coorpacademy.png" alt="Coorpacademy">
+                  </a>
+                </h3>
+                <h3>Data Science Intern</h3>
+              </div>
+              <div class="col-sm-3 sm-right">
+                <p>2016</p>
+                <p>6 months</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel-body">
+            Internship in <strong>Data Science</strong> at Coorpacademy, Paris:
+            <ul>
+              <li>Created <strong>streaming pipeline</strong> analyzing live business data with Spark
+              <li>Developed a Machine Learning recommendation engine with TensorFlow
+              <li>Designed a scalable and maintainable environment with virtualization and containers
+            </ul>
+          </div>
+        </div>
         <div class="panel panel-info">
           <div class="panel-heading">
             <div class="row">
@@ -334,7 +378,7 @@
                     Georgia Institute of Technology
                   </a>
                 </h3>
-                Master of Computer Science - Machine Learning
+                <h3>Master of Computer Science - Machine Learning</h3>
               </div>
               <div class="col-sm-3 sm-right">
                 <p>Jan 2016 - Current</p>
@@ -356,10 +400,10 @@
               <div class="col-sm-9 unpadded">
                 <h3 class="panel-title">
                   <a href="https://www.insa-lyon.fr/en">
-                    National Institute of Applied Sciences of Lyon (INSA Lyon)
+                    National Institute of Applied Science of Lyon (INSA Lyon)
                   </a>
                 </h3>
-                Engineering Degree in Computer Science
+                <h3>Engineering Degree in Computer Science</h3>
               </div>
               <div class="col-sm-3 unpadded sm-right">
                 <p>2013-2017</p>
@@ -382,7 +426,7 @@
                 <h3 class="panel-title">
                   Paris Descartes University 2-year Degree (DUT)
                 </h3>
-                Technological University (2-year) Degree of Computer Science
+                <h3>Technological University (2-year) Degree of Computer Science</h3>
               </div>
               <div class="col-sm-3 sm-right">
                 <p>2011-2013</p>
