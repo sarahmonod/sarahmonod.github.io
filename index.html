@@ -110,19 +110,32 @@
     @page {
       margin: 1cm;
       margin-top: .5cm;
+      margin-bottom: .5cm;
       size: letter portrait;
     }
     body {
-      font-size: .2cm;
-      background-color: #fff;
+      font-size: .27cm;
+      background-color: white;
+    }
+    .big-col {
+      padding: 5px;
     }
     ul {
       padding-left: 2rem;
     }
+    .page-header {
+      font-size: 2.5rem;
+    }
+    .page-header > small {
+      position: absolute;
+      top: 26px;
+      right: 20px;
+    }
     h2 {
       margin-top: 10px;
+      font-size: 1.3rem;
     }
-    h3 {
+    h3, h3.panel-title {
       font-size: 1.2rem;
     }
     h4 {
@@ -132,16 +145,17 @@
       margin-bottom: 10px;
     }
     .panel-info, .panel-info > .panel-heading {
-      border-color: #80a0a7;
+      border-color: #4C72B0;
     }
     .panel-success, .panel-success > .panel-heading {
       border-color: #466c27;
     }
     .panel-danger, .panel-danger > .panel-heading {
-      border-color: #9e3243;
+      border-color: #C44E52;
     }
     .panel-warning, .panel-warning > .panel-heading {
-      border-color: #806226;
+      border-color: #E87300;
+      #D45F00
     }
     .panel-default, .panel-default > .panel-heading {
       border-color: #606060;
@@ -177,7 +191,7 @@
       <h1 class="page-header">Gus Monod<br><small>Software Engineer Student in Data Science</small></h1>
     </div>
     <div class="row">
-      <div class="col-sm-6">
+      <div class="big-col col-sm-6">
         <strong>Summary</strong>
         <p>
           I am a fast-learner, and I enjoy computer science and foreign
@@ -188,7 +202,7 @@
         <a class="no-print" href="/fr"><img src="/img/earth.png" alt="earth icon">&nbsp;version française</a>
         <a class="xs-right no-print" href="gusmonod.pdf"><img src="/img/file-pdf.png" alt="pdf icon">&nbsp;pdf</a>
       </div>
-      <div class="col-sm-3">
+      <div class="big-col col-sm-3">
         <p>
           <strong>Email</strong>
           <a href="mailto:g.monod@gmail.com">g.monod@gmail.com</a>
@@ -220,7 +234,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-6">
+      <div class="big-col col-sm-6">
         <h2>Work Experience</h2>
         <div class="panel panel-info">
           <div class="panel-heading">
@@ -321,38 +335,12 @@
             Internship in <strong>Big Data</strong> at SAP AG in Walldorf, Germany:
             <ul>
               <li>Optimized of the management of a car park for BMW
-              <li>Realized of a calculation engine for the Business Intelligence using Hadoop HBase
+              <li>Realized of a calculation engine for the Business Intelligence using HBase
               <li>Developed for a <strong>very scalable environment</strong>, with high speed requirements
             </ul>
           </div>
         </div>
         <h2>Interests</h2>
-        <div class="panel panel-success">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-sm-9">
-                <h3 class="panel-title">Spoken Languages</h3>
-              </div>
-              <div class="col-sm-3 sm-right">
-                <p>For a long time ;-)</p>
-              </div>
-            </div>
-          </div>
-          <div class="panel-body">
-            <div class="row padded">
-              <p class="col-sm-8 unpadded"><strong>English: </strong>Fully fluent (TOEFL<span class="hidden-sm hidden-md"> score</span>: 114/120)</p>
-              <p class="col-sm-4 unpadded sm-right"><strong>German: </strong>Fluent</p>
-            </div>
-            <div class="row padded">
-              <p class="col-sm-6 unpadded"><strong>French: </strong>Mother language</p>
-              <p class="col-sm-6 unpadded sm-right"><strong>Chinese (漢語): </strong>studied 2 y<span class="hidden-sm">ears</span></p>
-            </div>
-            <div class="row padded">
-              <p class="col-sm-6 unpadded"><strong>Italian: </strong>studied 3 years</p>
-              <p class="col-sm-6 unpadded sm-right"><strong>Spanish: </strong>studied 1 year</p>
-            </div>
-          </div>
-        </div>
         <div class="panel panel-success">
           <div class="panel-heading">
             <div class="row">
@@ -376,7 +364,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-6">
+      <div class="big-col col-sm-6">
         <h2>Education</h2>
         <div class="panel panel-danger">
           <div class="panel-heading">
@@ -411,7 +399,7 @@
                 <h3 class="panel-title">
                   <a href="https://www.insa-lyon.fr/en">
                     <img src="/img/insa.png" class="logo" alt="INSA:">
-                    National Institute of Applied Science of Lyon
+                    National Institute of Applied Science
                   </a>
                 </h3>
                 <h3>Engineering Degree in Computer Science</h3>
@@ -440,7 +428,7 @@
                     Paris Descartes Institute
                   </a>
                 </h3>
-                <h3>Technological University (2-year) Degree of Computer Science</h3>
+                <h3>2-year Computer Science Degree</h3>
               </div>
               <div class="col-sm-3 sm-right">
                 <p>2011-2013</p>
@@ -463,7 +451,7 @@
                 <h4>Machine Learning</h4>
                 <ul>
                   <li>Algorithms and data structures
-                  <li>Python (sklearn) or Matlab implementations
+                  <li>Python (sklearn) or Matlab
                 </ul>
                 <h4>Database Management</h4>
                 <ul>
@@ -474,21 +462,19 @@
               <div class="col-sm-6">
                 <h4>General</h4>
                 <ul>
-                  <li>Unix administration
+                  <li>Docker, Alpine Linux
                   <li>C++, Ruby
                 </ul>
                 <h4>Full Stack Development</h4>
                 <ul>
-                  <li>Javascript ES6, HTML 5 and CSS 3, React
+                  <li>React and JSX
                   <li>Node.js, Gulp, Jasmine
-                  <li>Java and Android
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <h2>Other Activities</h2>
-        <div class="panel panel-default">
+        <div class="panel panel-warning">
           <div class="panel-heading">
             <h3 class="panel-title">Hackathons &amp; Competitions</h3>
           </div>
@@ -496,6 +482,32 @@
             <ul>
               <li>Realized a 3D modeling software using 3D movements and voice recognition (winning team of fHACKtory 2014)
             </ul>
+          </div>
+        </div>
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-sm-9">
+                <h3 class="panel-title">Spoken Languages</h3>
+              </div>
+              <div class="col-sm-3 sm-right">
+                <p>For a long time</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="row padded">
+              <p class="col-sm-8 unpadded"><strong>English: </strong>Fully fluent (TOEFL<span class="hidden-sm hidden-md"> score</span>: 114/120)</p>
+              <p class="col-sm-4 unpadded sm-right"><strong>German: </strong>Fluent</p>
+            </div>
+            <div class="row padded">
+              <p class="col-sm-6 unpadded"><strong>French: </strong>Mother language</p>
+              <p class="col-sm-6 unpadded sm-right"><strong>Chinese (漢語): </strong>studied 2 y<span class="hidden-sm">ears</span></p>
+            </div>
+            <div class="row padded">
+              <p class="col-sm-6 unpadded"><strong>Italian: </strong>studied 3 years</p>
+              <p class="col-sm-6 unpadded sm-right"><strong>Spanish: </strong>studied 1 year</p>
+            </div>
           </div>
         </div>
       </div>
